@@ -26,8 +26,8 @@ cd $build_dir
       export_env_dir $env_dir
     fi
 
-    status "Found gulpfile, running gulp heroku:$NODE_ENV task"
-    $build_dir/node_modules/.bin/gulp heroku:$NODE_ENV
+    status "Found gulpfile, running gulp heroku:production task"
+    $build_dir/node_modules/.bin/gulp heroku:production
   else
     status "No gulpfile found"
   fi
